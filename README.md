@@ -5,3 +5,14 @@
 
 A couple things you can do include:
 * setting aliases, e.g.: having `alias notebook="jupyter notebook"` lets me open jupyter notebook by just typing one word, which is a lot faster than two considering autocomplete.
+
+## Loops
+
+```bash
+for file in *.h5 do 
+  if ! ls ../fil/*.fil | grep ${file%.h5} -c &>/dev/null
+    then echo ${file%.h5} "not found, transferring"
+         h52fil $file 
+  fi 
+done
+```
