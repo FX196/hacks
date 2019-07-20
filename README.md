@@ -1,8 +1,5 @@
-# hacks
-Little things I've learned that makes life easier
-
-## Bash
-Editing `.bash_profile`:
+# Bash Tricks
+## Editing `.bash_profile`:
 
 `.bash_profile` is a script that is run when `bash` is invoked. For Mac, it gets run every time you open terminal, it's basically a config file for terminal. Add code to the file and restart terminal for the changes to take effect.
 
